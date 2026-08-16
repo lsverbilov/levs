@@ -11,6 +11,7 @@ import os
 import base64
 import io
 import random
+from pathlib import Path
 
 import numpy as np
 import cv2
@@ -19,7 +20,7 @@ from streamlit_drawable_canvas import st_canvas
 from PIL import Image
 from tensorflow import keras
 
-MODEL_PATH = "model/group_6_pictionary_model.keras"
+MODEL_PATH = str(Path(__file__).parent / "model" / "group_6_pictionary_model.keras")
 CONFIDENCE_THRESHOLD = 0.68
 GPT_FALLBACK_THRESHOLD = 0.50
 
