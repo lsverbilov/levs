@@ -1,8 +1,6 @@
 """
-AI Pictionary (Streamlit version) — draw a doodle, the CNN guesses what it is.
+AI Pictionary — draw a doodle, the CNN guesses what it is.
 
-Run with:
-    streamlit run app.py
 
 Requires OPENAI_API_KEY in your environment for the low-confidence GPT fallback
 (optional — the app works fine without it, just skips that feature).
@@ -24,13 +22,13 @@ MODEL_PATH = str(Path(__file__).parent / "model" / "group_6_pictionary_model.ker
 CONFIDENCE_THRESHOLD = 0.68
 GPT_FALLBACK_THRESHOLD = 0.50
 
-# Confirmed order from the original notebook's docstring + GPT-verification cell
+
 CATEGORIES = [
     "apple", "bicycle", "cat", "fish", "flower",
     "house", "ice cream", "star", "tree", "umbrella",
 ]
 
-# Crayon-box color per category -- used consistently for chips, bars, and results
+
 CATEGORY_COLORS = {
     "apple": "#FF5A5F", "bicycle": "#4EA8DE", "cat": "#A78BFA",
     "fish": "#2EC4B6", "flower": "#FF8FAB", "house": "#C08552",
