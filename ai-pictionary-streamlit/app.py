@@ -297,6 +297,7 @@ def main():
                 height=280,
                 width=280,
                 drawing_mode="freedraw",
+                return_image_data=True,
                 key="canvas",
             )
         classify_clicked = st.button("🔍  Guess my drawing", type="primary")
